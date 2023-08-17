@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex005</title>
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(4, 29, 140);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+        strong {
+            color: rgb(255, 149, 12);
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
-    
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.color = 'orange'
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('está escrito assim: '+p1.innerText)
+        p1.style.color = 'black'
+
+        window.alert('testando alerta: '+p1.innerText)
+    </script>
 </body>
 </html>
