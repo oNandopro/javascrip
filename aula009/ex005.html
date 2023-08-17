@@ -23,7 +23,7 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <script>
         var corpo = window.document.body
@@ -32,6 +32,14 @@
         var p1 = window.document.getElementsByTagName('p')[1]
         window.document.write('está escrito assim: '+p1.innerText)
         p1.style.color = 'black'
+
+        var h1 = window.document.getElementsByTagName('h1')[0]
+        h1.style.color = 'green'
+
+        var div = window.document.getElementById('msg')
+        div.style.color = 'violet'
+        div.style.backgroundColor = 'black'
+        div.innerText = 'testando'
 
         window.alert('testando alerta: '+p1.innerText)
     </script>
