@@ -21,15 +21,28 @@
 <body>
 
     <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id="msg">Clique em mim</div>
+    
+    <p>Aqui vai o resultado </p>
+    
+    <p name="p1">Aprendendo a usar o <strong>DOM</strong> em JavaScript </p>
+    <p class="p2">Testando elemento class = . </p>
+    <div id="msg">Clique em mim </div>
+    
+    
+
 
     <script>
+
+        /*
+        exemplos de configurações de elementos por:
+            - Marca (tag)
+            - Id
+            - Nome
+
         var corpo = window.document.body
         corpo.style.color = 'orange'
 
-        var p1 = window.document.getElementsByTagName('p')[1]
+        var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('está escrito assim: '+p1.innerText)
         p1.style.color = 'black'
 
@@ -39,9 +52,28 @@
         var div = window.document.getElementById('msg')
         div.style.color = 'violet'
         div.style.backgroundColor = 'black'
-        div.innerText = 'testando'
+        div.innerText = 'testando (JS)' 
+        div.style.textAlign = 'center'
 
-        window.alert('testando alerta: '+p1.innerText)
+        var p1 = document.getElementsByName('p1')[0]
+        p1.style.color = 'white'
+        
+        var pp2 = document.getElementsByClassName('p2')[0]
+        pp2.style.color = 'red'
+
+        window.alert('testando alerta: '+p1.innerText)*/
+
+        var vardiv = document.querySelector('div#msg')
+        vardiv.style.color = 'red'
+
+        var p = document.querySelector('p.p2')
+        p.style.color = "black"
+
+       
+
+
     </script>
+    
+    
 </body>
 </html>
