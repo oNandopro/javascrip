@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            background-color: tomato;
+            font: normal 10pt Arial;
+        }
+
+        h1 {
+            color: rgb(40, 77, 3);
+        }
+
+        input {
+            font: normal 18 pt Arial;
+            width: 60px;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+
+        div {
+            background-color: rgba(147, 38, 18, 0.532);
+            color: rgb(255, 242, 0);
+            width: 400px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()"> 
+    <div id="res+">Resultado...</div> 
+
+    <h1>Subtraíndo Valores</h1>
+    <input type="number" name="php-off" id="inp01" placeholder="Valor"> -
+    <input type="number" name="php-off" id="inp02" placeholder="Valor">
+    <input type="button" value="Subtrair" onclick="subtrair()"> 
+    <div id="res">Resultado...</div>
+
+    <script>
+
+        function somar() {
+
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res+')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+
+        }
+
+        function subtrair() {
+
+            var str1 = window.document.getElementById('inp01')
+            var str2 = window.document.getElementById('inp02')
+            var n1   = Number(str1.value)
+            var n2   = Number(str2.value)
+            var res  = window.document.getElementById('res')
+            var s    = n1 - n2
+
+            res.innerHTML = ` Total ${s}` 
+
+            
+
+        }
+
+    </script>
+
+
+</body>
+</html>
