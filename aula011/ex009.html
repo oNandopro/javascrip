@@ -13,33 +13,27 @@
 
         }
 
-        div {
-            background-color: rgba(246, 48, 13, 0.53);
-            width: 500px;
-            height: 80px;
-            line-height: 80px;
-            padding-left: 15px;
-        }
+  
 
     </style>
 </head>
 <body>
     <h1>Olá...</h1>
 
-    <p>Qual seu país de origem? <input type="text" name="php-off" id="org" placeholder="Escreva aqui"> e clique aqui <input type="button" value="Enviar" onclick="calcular()"></p>
-    <div id="divres">Resultado...</div>
+    <p>Qual seu país de origem? <input type="text" name="php-off" id="origem" placeholder="Escreva aqui"> clique aqui <input type="button" value="Enviar" onclick="verificar()"></p>
+    <div id="res"></div>
 
     <script>
 
         
 
-        function calcular() {
+        function verificar() {
 
-            var pais = window.document.getElementById('org')
+            var pais = window.document.getElementById('origem').value;
             
-            var res = window.document.getElementById('divres')
+            var res = window.document.getElementById('res')
 
-            res.innerHTML = `<p>Você nasceu no (em) ${pais}</p>`
+            res.innerHTML = `<p>Seu país de origem é <strong> ${pais} </strong></p>`
 
             if (pais == 'Brasil') {
 
