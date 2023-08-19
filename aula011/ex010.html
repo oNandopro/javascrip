@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+    <style>
+        body {
+            background-color: turquoise;
+            font: normal 14pt Arial;
+            color: rgb(155, 9, 9);
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Sistema de Multas</h1>
+
+    <P>Velocidade do carro: <input type="number" name="php-off" id="velocidade"> Km/h <input type="button" value="Verificar" onclick="calcular()"> agora:</P>
+
+    <div id="divres">Resultado...</div>
+
+    <script>
+
+        function calcular() {
+
+            var velstr = window.document.getElementById('velocidade')
+            var velnum = Number(velstr.value)
+            var res = window.document.getElementById('divres')
+            res.innerHTML = `<p> Sua velocidade foi de <strong> ${velnum} Km/h. </strong></p/>`
+
+            if (velnum > 60) {
+                res.innerHTML += '<p> Você está <strong> MULTADO </strong> por exesso de velocidade! </p>'
+            }
+
+            res.innerHTML += '<p> Dirija sempre com o cinto de segurança </p>'
+        }
+        
+    </script>
+
 </body>
 </html>
