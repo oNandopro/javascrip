@@ -26,7 +26,9 @@
 
             var velstr = window.document.getElementById('velocidade')
             var velnum = Number(velstr.value)
+
             var res = window.document.getElementById('divres')
+            
             res.innerHTML = `<p> Sua velocidade foi de <strong> ${velnum} Km/h. </strong></p/>`
 
             if (velnum > 60) {

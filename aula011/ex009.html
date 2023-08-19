@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex009/Condições</title>
+    <style>
+        body {
+            background-color: tomato;
+            color: rgb(78, 2, 125);
+            font: normal 14pt Arial;
+            padding-left: 25px;
+
+        }
+
+        div {
+            background-color: rgba(246, 48, 13, 0.53);
+            width: 500px;
+            height: 80px;
+            line-height: 80px;
+            padding-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá...</h1>
+
+    <p>Qual seu país de origem? <input type="text" name="php-off" id="org" placeholder="Escreva aqui"> e clique aqui <input type="button" value="Enviar" onclick="calcular()"></p>
+    <div id="divres">Resultado...</div>
+
+    <script>
+
+        
+
+        function calcular() {
+
+            var pais = window.document.getElementById('org')
+            
+            var res = window.document.getElementById('divres')
+
+            res.innerHTML = `<p>Você nasceu no (em) ${pais}</p>`
+
+            if (pais == 'Brasil') {
+
+                res.innerHTML += '<p>Você é Brasileiro</p>'
+
+            } else {
+
+                res.innerHTML += '<p>Você é Estrangeiro</p>'
+            }
+        }
+
+    </script>
+</body>
+</ht
