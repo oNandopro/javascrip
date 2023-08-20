@@ -1,10 +1,10 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 /*
     cores:
-    manha #fdf7aa - 3faee7b
+    manha #fdf7aa -  3faee7b
     tarde #485779 - 616d86
     noite #232324 - 282828
 */
@@ -14,38 +14,32 @@
     margin: 0px;
     padding: 0px;
 }
-
 body, html {
-    background-color: #87ceeb;
+    background-color:#87ceeb ;
     width: 100wh;
     height: 100vh;
-    
-
 }
-
 header {
 
-    padding: 20px;
+    padding: 40px;
     color: white;
     text-align: center;
-
 }
 section {
     margin: auto;
-    width: 400px;
+    width: 80vw;
     height: 400px;
     padding: 10px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.722);
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
-    
-
 }
-
+div {
+    text-align: center;
+    padding: 20px;
+}
 footer {
     color: white;
-    margin: 20px;
+    margin: 30px;
     text-align: center;
-    
-   
 }
