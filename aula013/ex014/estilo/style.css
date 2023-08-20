@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
+/*
+    cores:
+    manha #fdf7aa - 3faee7b
+    tarde #485779 - 616d86
+    noite #232324 - 282828
+*/
+
 * {
     font: normal 14pt "AudioWide";
     margin: 0px;
