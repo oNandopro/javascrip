@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 * {
-    font-family: "AudioWide";
+    font: normal 14pt "AudioWide";
     margin: 0px;
     padding: 0px;
 }
@@ -12,21 +12,33 @@ body, html {
     background-color: #87ceeb;
     width: 100wh;
     height: 100vh;
+    
 
 }
 
 header {
-    background-color: #4dbce7;
-}
 
+    padding: 20px;
+    color: white;
+    text-align: center;
+
+}
 section {
-    margin: 20px;
+    margin: auto;
     width: 400px;
     height: 400px;
+    padding: 10px;
     background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
+    
+
 }
 
 footer {
-    background-color: #4dbce7;
+    color: white;
+    margin: 20px;
     text-align: center;
+    
+   
 }
