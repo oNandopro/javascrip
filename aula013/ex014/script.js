@@ -4,7 +4,7 @@ function carregar() {
     var boa = window.document.getElementById('msg')
     var data = new Date()
     //var hora = data.getHours()
-    var hora = 14
+    var hora = 8
     msg.innerHTML = `Agora são ${hora} horas e alguns minutos!`
     if (hora >=6 && hora <12) {
         //BOM DIA!
@@ -22,5 +22,10 @@ function carregar() {
         document.body.style.backgroundColor = '#232324'
         boa.innerHTML = 'Boa Noite!'
     }
-
 }
+/*
+    cores:
+    manha #fdf7aa -  3faee7b
+    tarde #485779 - 616d86
+    noite #232324 - 282828
+*/

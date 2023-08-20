@@ -2,13 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-/*
-    cores:
-    manha #fdf7aa -  3faee7b
-    tarde #485779 - 616d86
-    noite #232324 - 282828
-*/
-
 * {
     font-family: "AudioWide";
     margin: 0px;
@@ -25,7 +18,7 @@ header {
     text-align: center;  
 }
 header  {
-    font-size: 2em;
+    font-size: 2em; 
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.316);
 }
 section {
@@ -36,7 +29,7 @@ section {
     background-color: rgba(255, 255, 255, 0.722);
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
-    font-size: 14pt;
+    font-size: 14pt; 
 }
 div {
     text-align: center;
@@ -44,7 +37,7 @@ div {
 }
 footer {
     color: white;
-    margin: 30px;
+    margin: 40px;
     text-align: center;
 }
 footer p {
@@ -58,15 +51,15 @@ footer p a#curso {
 }
 footer p a#curso:hover {
     color: blue;
-    font-size: 15pt;
+    font-size: 15pt; 
 }
 footer a {
-    font-size: 09pt;
+    font-size: 09pt; 
     color: white;
     text-decoration: none;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.084);
 }
 footer a:hover {
     color: #d816be ;
-    font-size: 10pt;
+    font-size: 10pt; 
 }
