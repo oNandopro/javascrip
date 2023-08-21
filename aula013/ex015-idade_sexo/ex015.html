@@ -16,15 +16,20 @@
     <section>
 
         <div>
-            <p>Ano de Nascimento <input type="number" name="php-off" id="ano" placeholder="DIgite Aqui!"></p>
+
+            <p>Ano de Nascimento <input type="number" name="php-off" id="ano" placeholder="Digite Aqui!">
+            </p>
+
             <p>Sexo:
                 <input type="radio" name="radsex" id="mas" checked> <label for="mas">Masculino</label> 
                 <input type="radio" name="radsex" id="fem"> 
                 <label for="fem">Feminino</label>
             </p>
+
             <p>
-                <input type="button" value="Verificar Agora" onclick="verificar()">
+                <input type="button" value="Verificar Agora" onclick="verificar()" id="ver">
             </p>
+
         </div>
 
         <div id="res">
@@ -37,9 +42,13 @@
 
     </section>
 
-    <footer>
-        <p> &copy; Curso em Vídeo</p>
-        <p>disign by oNando</p>
+    <footer style="line-height: 18px;">
+
+        <p><a href="https://www.cursoemvideo.com/" target="_blank" id="curso">&copy; Curso em Vídeo</a></p>
+
+        <p>disign by <a href="https://github.com/oNandopro
+            " target="_blank" id="nando">oNando</a>
+        </p>
     </footer>
 
     <script src="script.js"></script>

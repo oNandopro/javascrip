@@ -4,39 +4,57 @@
 
 * {
     font-family: "AudioWide";
-    line-height: 25px;
     margin: 0px;
     padding: 0px;
     text-align: center;
 }
-
 body, html {
-    /*background-color: ;*/
     background-image: linear-gradient(to top left, pink, #58c8f4 60%);
     width: 100wh;
     height: 100vh;
 }
 header {
     padding: 40px;
-    font-size: 16px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.167);
-
 }
 section {
     margin: auto;
     width: 80vw;
     height: 450px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.449);
+    background-image: linear-gradient(to top left, #58c8f486, rgba(255, 192, 203, 0.586)80%);
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
     font-size: 14px;
+    line-height: 25px;
+}
+div input#ver {
+    width: 100px;
+    height: 20px;
+    background-color: pink;
+    color: white;
+    font-size: 10px;
 }
 footer {
     color: white;
     margin: 20px;
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.099); 
+}
+footer a#curso {
+    text-decoration: none;
+    color: white;
+}
+footer a#curso:hover {
+    color: blue;
+}
+footer a#nando {
+    text-decoration: none;
+    color: white;
+}
+footer a#nando:hover {
+    color: #d816be;
 }

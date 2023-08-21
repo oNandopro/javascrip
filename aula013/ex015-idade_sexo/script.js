@@ -1,4 +1,4 @@
-/*function verificar() {
+function verificar() {
     var data = new Date()
     var anoatual = data.getFullYear()
     var anousu = document.getElementById('ano')
@@ -41,6 +41,6 @@
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Indentificamos que você é ${genero} de ${idade} anos!`
+        res.innerHTML = `Indentificamos que você é <strong> ${genero} </strong> de <strong>${idade} </strong> anos!`
     }
 }
