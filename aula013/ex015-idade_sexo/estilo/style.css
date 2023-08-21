@@ -4,12 +4,15 @@
 
 * {
     font-family: "AudioWide";
+    line-height: 25px;
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 
 body, html {
-    background-color: #87ceeb;
+    /*background-color: ;*/
+    background-image: linear-gradient(to top left, pink, #58c8f4 60%);
     width: 100wh;
     height: 100vh;
 }
@@ -30,9 +33,6 @@ section {
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
     font-size: 14px;
-}
-div img {
-    padding-left: 25px;
 }
 footer {
     color: white;

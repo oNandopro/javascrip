@@ -1,4 +1,4 @@
-function verificar() {
+/*function verificar() {
     var data = new Date()
     var anoatual = data.getFullYear()
     var anousu = document.getElementById('ano')
@@ -11,7 +11,7 @@ function verificar() {
         var genero = ''
         if (sexusu[0].checked) {
             genero = 'Homem'
-            if (idade >= o && idade <=7) {
+            if (idade >=0 && idade <=7) {
                 //bebe
                 img.src = 'imagens/bebe-m.png'
             } else if (idade <21) {
@@ -37,11 +37,10 @@ function verificar() {
                 img.src = 'imagens/adulto-f.png'
             } else {
                 //idosa
-                img.src = 'imagens.idoso-f.png'
+                img.src = 'imagens/idoso-f.png'
             }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Indentificamos que você é ${genero} de ${idade} anos!`
-        res.appendChild(img)
     }
 }
