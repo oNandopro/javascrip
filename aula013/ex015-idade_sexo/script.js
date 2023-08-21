@@ -9,32 +9,39 @@ function verificar() {
         var sexusu = document.getElementsByName('radsex')
         var idade = anoatual - Number(anousu.value)
         var genero = ''
-        var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
         if (sexusu[0].checked) {
             genero = 'Homem'
-            if (idade >= o && idade <=7){
+            if (idade >= o && idade <=7) {
                 //bebe
+                img.src = 'imagens/bebe-m.png'
             } else if (idade <21) {
                 //jovem
+                img.src = 'imagens/jovem-m.png'
             } else if (idade <50) {
                 //adulto
+                img.src = 'imagens/adulto-m.png'
             } else {
-                /idoso
+                //idoso
+                img.src = 'imagens/idoso-m.png'
             }
         } else if (sexusu[1].checked) {
             genero = 'Mulher'
             if (idade >=0 && idade <7) {
                 //bebe
+                img.src = 'imagens/bebe-f.png'
             } else if (idade <21) {
                 //jovem
+                img.src = 'imagens/jovem-f.png'
             } else if (idade <50) {
                 //adulta
+                img.src = 'imagens/adulto-f.png'
             } else {
                 //idosa
+                img.src = 'imagens.idoso-f.png'
             }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Indentificamos que você é ${genero} de ${idade} anos!`
+        res.appendChild(img)
     }
 }
