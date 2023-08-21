@@ -1,12 +1,20 @@
 function verificar() {
     var data = new Date()
-    var anoatu = getFullYear()
-    var ano = document.getElementById('ano')
+    var anoatual = data.getFullYear()
+    var anousu = document.getElementById('ano')
     var res = document.getElementById('res')
-    if (ano.value.length == 0 || ano.value > anoatu) {
-        window.alert('[ERRO] Verifique os dados e tente novamente!')
+    if (anousu.value.length == 0 || Number(anousu.value) > anoatual) {
+        window.alert('[ERRO]')
     } else {
-        window.alert('Tudo ok!')
+        var sexusu = document.getElementsByName('radsex')
+        var idade = anoatual - Number(anousu.value)
+        var genero = ''
+        if (sexusu[0].checked) {
+            genero = 'Homem'
+        } else if (sexusu[1].checked) {
+            genero = 'Mulher'
+        }
+        res.style.textAlign = 'center'
+        res.innerHTML = `Indentificamos que você é ${genero} de ${idade} anos!`
     }
-
 }
