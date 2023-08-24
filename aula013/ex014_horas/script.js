@@ -25,7 +25,7 @@ function carregar() {
 }
 /*
     cores:
-    manha #fdf7aa -  3faee7b
+    manha #fdf7aa - 3faee7b
     tarde #485779 - 616d86
     noite #232324 - 282828
 */
