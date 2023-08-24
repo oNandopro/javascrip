@@ -15,7 +15,7 @@ while (c <=10//teste lógico) {
     c++ //incremento
 }
 /* NESTA:
-for (var c=1;c<=10;c++) {
+for (var c=1 ; c<=10 ; c++) {
     console.log('Passo ${c}')
 }*/
 
