@@ -9,7 +9,7 @@
 }
 
 body, html {
-    background-color: #87ceeb;
+    background-color: #1b8d12;
     width: 100wh;
     height: 100vh;
 }
@@ -29,6 +29,27 @@ section {
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
     font-size: 1.5em;
+}
+div#divn {
+    padding-top: 25px;
+}
+input#num {
+    width: 130px;
+    height: 25px;
+    text-align: center;
+    font-size: 13px;
+    
+}
+input#but {
+    width: 120px;
+    height: 25px;
+    font-size: 13px;
+    background-color: #1a8d1254;
+    
+}
+input#but:hover {
+    background-color: #1b8d12;
+    color: white;
 }
 footer {
     color: white;
