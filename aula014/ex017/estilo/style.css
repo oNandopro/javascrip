@@ -32,12 +32,14 @@ section {
 }
 div#divn {
     padding-top: 25px;
+    margin-left: 10px;
 }
 input#num {
     width: 130px;
     height: 25px;
     text-align: center;
     font-size: 13px;
+    background-color: #1a8d1228;
     
 }
 input#but {
@@ -50,7 +52,12 @@ input#but {
 input#but:hover {
     background-color: #1b8d12;
     color: white;
+    cursor: pointer;
 }
+div#divtab {
+    margin-top: 20px;
+}
+
 footer {
     color: white;
     font-size: 1.5em;
