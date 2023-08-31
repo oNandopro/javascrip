@@ -73,9 +73,6 @@ div #butdois:hover {
     color: white;
     cursor: pointer;
 }
-div #res {
-    padding-left: 25px;
-}
 footer {
     font-size: 1.5em;
     font-style: italic;
